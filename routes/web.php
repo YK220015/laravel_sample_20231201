@@ -14,8 +14,8 @@ Route::get('/item/create', [ItemController::class, 'create'])->name('item.create
 Route::post('/item/store', [ItemController::class, 'store'])->name('item.store');
 Route::get('/item/{id}', [ItemController::class, 'show'])->name('item.show');
 Route::get('/item/edit/{id}', [ItemController::class, 'edit'])->name('item.edit');
-Route::get('/item/update/{id}', [ItemController::class, 'update'])->name('item.update');
-Route::get('/item/destroy/{id}', [ItemController::class, 'destroy'])->name('item.destroy');
+Route::post('/item/updqte/{id}', [ItemController::class, 'update'])->name('item.update');
+Route::post('/item/destroy/{id}', [ItemController::class, 'destroy'])->name('item.destroy');
 
 Route::get('/', function () {
     // resources/views/welcome.blade.php ビューが表示
